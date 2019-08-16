@@ -49,7 +49,8 @@
 
 @media only screen and (max-width:768px){
   body{
-    overflow-x:  hidden;
+    -webkit-overflow-x:  hidden;
+     overflow-x:  hidden;
   }
   .navbar{
     
@@ -82,17 +83,20 @@
  }
 
  .nav-active{
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+   transform: translateX(0);
  }
 
  @-webkit-keyframes nav-animation {
    from{
      opacity: 0;
-     transform: translateX(50px)
+     -webkit-transform: translateX(50px);
+     transform: translateX(50px);
    }
    from{
     opacity: 1;
-    transform: translateX(0px)
+    -webkit-transform: translateX(0px);
+     transform: translateX(0px);
   }
  }
 

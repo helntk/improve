@@ -96,6 +96,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   body {
+    -webkit-overflow-x: hidden;
     overflow-x: hidden;
   }
 
@@ -126,16 +127,19 @@ h1 {
   }
 
   .nav-active {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
   @-webkit-keyframes nav-animation {
     from {
       opacity: 0;
+      -webkit-transform: translateX(50px);
       transform: translateX(50px);
     }
     from {
       opacity: 1;
+      -webkit-transform: translateX(0px);
       transform: translateX(0px);
     }
   }
