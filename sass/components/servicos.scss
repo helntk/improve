@@ -4,5 +4,12 @@
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    height: 120vh;
+    
 }
 
+@media screen and (min-width:800px){
+ .servicos{
+     height: 70vh;
+ }
+}
