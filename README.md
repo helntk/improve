@@ -1,4 +1,7 @@
 # improve
+
+Criei o design no figma. É autêntico, procurei ser criativo.
+
 Um site que fiz, responsivo. Mobile first.
 
 
