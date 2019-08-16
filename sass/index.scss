@@ -1,0 +1,28 @@
+@import './colors/colors.scss';
+@import './typography/fonts.scss';
+@import './utilities/container.scss';
+@import 'elements/navbar.scss';
+@import 'elements/card.scss';
+@import 'elements/btn.scss';
+@import 'components/hero.scss';
+@import 'components/servicos.scss';
+@import 'components/quem-somos.scss';
+@import 'components/contato.scss';
+
+
+
+::after,
+::before,
+*{
+  box-sizing:inherit;  
+}
+html{
+  box-sizing:border-box; 
+  font-size: 65%;
+}
+
+
+body{
+  margin:0;
+  padding:0; 
+} 

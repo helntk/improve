@@ -1,0 +1,18 @@
+.quem-somos{
+    background-color: $primary-color;
+    color: white;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+ 
+    .quem-somos-title{
+    text-align: center;
+  }
+
+   .quem-somos-text{
+    margin-left: 2rem;
+   }
+}

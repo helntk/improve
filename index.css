@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,700i|Poppins&display=swap");
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+open sans:
+regular:400
+italic
+bold:700
+
+poppins:
+regular: 400
+black italic: 900;
+*/
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.logo span {
+  color: #D9E1C3;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 80% !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 90% !important;
+  }
+}
+.container {
+  margin-left: 3rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #413C3C;
+  justify-content: space-around;
+  color: white;
+  width: 100vw;
+  height: 10vh;
+}
+.navbar .navbar-nav {
+  display: flex;
+  list-style-type: none;
+}
+.navbar .navbar-nav .nav-link {
+  margin-right: 2rem;
+}
+.navbar .navbar-burger {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  display: none;
+}
+.navbar .navbar-burger:before {
+  position: absolute;
+  bottom: 6px;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+.navbar .navbar-burger:after {
+  position: absolute;
+  top: 6px;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar .navbar-burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    height: 92vh;
+    flex-direction: column;
+    background-color: #413C3C;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 99;
+  }
+  .navbar-nav li {
+    opacity: 1;
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0);
+  }
+
+  @keyframes nav-animation {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    from {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+.card {
+  width: 20rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.card .card-top {
+  background-color: #E3F5F6;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-body {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card .card-body ul {
+  list-style: none;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card {
+    margin-left: 3rem;
+  }
+
+  .servicos {
+    height: 40vh;
+  }
+}
+/*!
+ *
+ * bttn.css - https://ganapativs.github.io/bttn.css
+ * Version - 0.2.4
+ * Demo: https://bttn.surge.sh
+ *
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Ganapati V S (@ganapativs)
+ *
+ */
+/* standalone - .bttn-simple */
+.bttn-default {
+  color: #fff;
+}
+
+.bttn-primary,
+.bttn,
+.bttn-lg,
+.bttn-md,
+.bttn-sm,
+.bttn-xs {
+  color: #1d89ff;
+}
+
+.bttn-warning {
+  color: #feab3a;
+}
+
+.bttn-danger {
+  color: #ff5964;
+}
+
+.bttn-success {
+  color: #28b78d;
+}
+
+.bttn-royal {
+  color: #bd2df5;
+}
+
+.bttn,
+.bttn-lg,
+.bttn-md,
+.bttn-sm,
+.bttn-xs {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+.bttn-lg {
+  padding: 8px 15px;
+  font-size: 24px;
+  font-family: inherit;
+}
+
+.bttn-md {
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+}
+
+.bttn-sm {
+  padding: 4px 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.bttn-xs {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.bttn-simple {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+  overflow: hidden;
+  border-width: 0;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.bttn-simple:hover,
+.bttn-simple:focus {
+  opacity: 0.75;
+}
+
+.bttn-simple.bttn-xs {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.bttn-simple.bttn-sm {
+  padding: 4px 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.bttn-simple.bttn-md {
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+}
+
+.bttn-simple.bttn-lg {
+  padding: 8px 15px;
+  font-size: 24px;
+  font-family: inherit;
+}
+
+.bttn-simple.bttn-default {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.bttn-simple.bttn-primary {
+  background: #1d89ff;
+}
+
+.bttn-simple.bttn-warning {
+  background: #feab3a;
+}
+
+.bttn-simple.bttn-danger {
+  background: #ff5964;
+}
+
+.bttn-simple.bttn-success {
+  background: #28b78d;
+}
+
+.bttn-simple.bttn-royal {
+  background: #bd2df5;
+}
+
+.hero {
+  color: white;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.3)), url("../../img/hero.jpg");
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  color: #D9E1C3;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+}
+.servicos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.quem-somos {
+  background-color: #413C3C;
+  color: white;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+}
+.quem-somos .quem-somos-title {
+  text-align: center;
+}
+.quem-somos .quem-somos-text {
+  margin-left: 2rem;
+}
+
+.contato {
+  background-color: #413C3C;
+  color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+.contato input {
+  width: 15rem;
+}
+.contato textarea {
+  width: 15rem;
+}
+.contato .contato-social-box {
+  margin-top: 1rem;
+}
+
+::after,
+::before,
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 65%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

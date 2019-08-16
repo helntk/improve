@@ -1,0 +1,40 @@
+.card{
+    width:20rem;
+    margin-bottom: 2rem;
+    box-shadow:2px 2px 2px rgba(0,0,0,.5);
+    .card-top{
+        background-color: $blue-color;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }  
+      
+    .card-body{
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        ul{
+           list-style: none;
+        }
+    }
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+    .card-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        margin-left:3rem;
+    }
+    .servicos{
+        height: 40vh;
+    }
+}
