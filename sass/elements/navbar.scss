@@ -68,6 +68,8 @@
   justify-content: space-around;
   align-items: center;
   width: 50%;
+  -webkit-transform: translateX(100%);
+  -webkit-transition: transform 0.5s ease-in;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
   z-index: 99;
@@ -83,7 +85,7 @@
   transform: translateX(0);
  }
 
- @keyframes nav-animation {
+ @-webkit-keyframes nav-animation {
    from{
      opacity: 0;
      transform: translateX(50px)
@@ -93,5 +95,16 @@
     transform: translateX(0px)
   }
  }
+
+ @keyframes nav-animation {
+  from{
+    opacity: 0;
+    transform: translateX(50px)
+  }
+  from{
+   opacity: 1;
+   transform: translateX(0px)
+ }
+}
 
 }
