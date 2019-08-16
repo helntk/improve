@@ -422,13 +422,13 @@ h1 {
 html {
   box-sizing: border-box;
   font-size: 65%;
-  overflow-x: hidden;
+  -webkit-overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  -webkit-overflow-x: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */
