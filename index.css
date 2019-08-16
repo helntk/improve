@@ -35,17 +35,17 @@ h1 {
   font-size: 2.3rem;
 }
 
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 500px) {
   html {
     font-size: 70%;
   }
 }
-@media screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) {
   html {
     font-size: 80% !important;
   }
 }
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   html {
     font-size: 90% !important;
   }
@@ -94,7 +94,7 @@ h1 {
   background-color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -107,8 +107,8 @@ h1 {
   .navbar-nav {
     position: absolute;
     right: 0;
-    top: 8vh;
-    height: 92vh;
+    top: 3vh;
+    height: 90vh;
     flex-direction: column;
     background-color: #413C3C;
     justify-content: space-around;
@@ -165,7 +165,7 @@ h1 {
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .card-container {
     display: flex;
     flex-direction: row;
