@@ -359,14 +359,10 @@ h1 {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 120vh;
+  height: auto;
+  padding: 2rem 0 2rem 0;
 }
 
-@media screen and (min-width: 800px) {
-  .servicos {
-    height: 70vh;
-  }
-}
 .quem-somos {
   background-color: #413C3C;
   color: white;
