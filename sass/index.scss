@@ -19,7 +19,8 @@
 html{
   box-sizing:border-box; 
   font-size: 65%;
-  -webkit-overflow-x: hidden
+  -webkit-overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body{
